@@ -150,3 +150,57 @@ button2.addEventListener('click', function(){   // this function can be used as 
         button2.textContent = 'SEE REVIEW';
     }
 });
+
+// Arrays
+let nums = []; // Create
+let values = [1,2,3]; // Create and initialize
+let numbers = Array.of(1,2,3); // initialize an array
+
+const chars = ['a', 'b', 'c'];
+console.log(chars);
+
+//Accessing Array Items
+console.log(chars[0]);
+console.log(chars[2]);
+
+// Manipulating Arrays
+chars.push('d');  // add items to the end of an array
+console.log(chars);
+chars.push('g','hgj', 'feew');
+console.log(chars);
+chars.shift(); // delete items from the beginning of an array
+console.log(chars);
+chars.pop(); // delete item from the end of an array
+console.log(chars);
+chars.unshift('hello', 'world'); // add items to the beginning of an array
+console.log(chars);
+
+//slice and splice
+const newValues = chars.slice(2,6);
+console.log(newValues);
+chars.splice(1,3);
+console.log(chars);
+chars.splice(2, 0 , 'new');
+console.log(chars);
+
+// Array Searching and Looping
+const charset = ['a', 'fe', 'ktir', 'e'];
+console.log(charset.indexOf('g')); // indexOf
+const set = charset.filter(function(item){   // filter
+    return item > 'b';
+});
+console.log(set);
+
+const found = charset.find(function(item){   // filter
+    return item.length > 1;
+});
+console.log(found);
+
+charset.forEach(function(item){   // filter
+    console.log(item);
+});
+
+// Arrays in the DOM
+const containers = document.getElementsByClassName('container');
+//containers[2].classList.add('d-none');
+console.log(containers);
